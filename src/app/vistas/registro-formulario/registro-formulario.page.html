@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>registro_formulario</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>ingrese datos al formulario</ion-card-subtitle>
+      <ion-card-title>Formulario para Registro</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Dato 1</ion-label>
+        <ion-input type="text" name="dato1" [(ngModel)]="datos_formulario.dato1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Dato 2</ion-label>
+        <ion-input type="text" name="dato2" [(ngModel)]="datos_formulario.dato2" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input type="text" name="nombre" [(ngModel)]="datos_formulario.nombre" ></ion-input>
+      </ion-item>
+      <ion-button (click)="enviarDatos()" expand="full" >Enviar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
