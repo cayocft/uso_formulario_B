@@ -15,5 +15,9 @@ export class FormularioService {
   registrarFormulario(datos_formulario){
     return this.http.post(`${this.backend}/crear-registro`,datos_formulario);
   }
+
+  obtenerDatosFormulario(){
+    return this.http.get(`${this.backend}/obtener-registros`)
+  }
   
 }
