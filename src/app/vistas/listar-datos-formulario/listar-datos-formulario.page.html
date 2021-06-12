@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>listar-datos-formulario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let dato_formulario of datos_formularios">
+    <ion-item>
+      Campo 1: {{dato_formulario.campo1}}
+    </ion-item>
+
+    <ion-item>
+      Campo 2: {{dato_formulario.campo2}}
+    </ion-item>
+  </ion-card>
+
+</ion-content>

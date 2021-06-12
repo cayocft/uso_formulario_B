@@ -15,7 +15,11 @@ const routes: Routes = [
   {
     path: 'registro-formulario',
     loadChildren: () => import('./vistas/registro-formulario/registro-formulario.module').then( m => m.RegistroFormularioPageModule)
+  },  {
+    path: 'listar-datos-formulario',
+    loadChildren: () => import('./vistas/listar-datos-formulario/listar-datos-formulario.module').then( m => m.ListarDatosFormularioPageModule)
   },
+
 ];
 
 @NgModule({
